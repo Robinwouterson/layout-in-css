@@ -7,12 +7,54 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       /* Doe hier jouw ding! */
+
+      .container-grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px;
+      }
+
+
+      .header {
+        grid-column: 5 / -1;
+        grid-row: 1;
+      }
+
+
+
+      .nav {
+        grid-column: 5 / -1;
+        grid-row: 2;
+      }
+
+
+
+      .content {
+        grid-column: 1 / 5;
+        grid-row: 1;
+      }
+      
+
+
+      .footer {
+        grid-column: 1 / 5;
+        grid-row: 2;
+        color: white;
+      }
     </style>
   </head>
+
   <body id="basic-layout-4">
-    <header><h1>Basic Layout 4</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+   
+    <div class="container-grid">
+    
+      <header class="header"><h1>Basic Layout 1</h1></header>
+      <nav class="nav"><a href="../index.html">Terug naar het overzicht</a></nav>
+      <main class="content">Content</main>
+      <footer class="footer">Footer</footer>
+  
+    </div>
+
   </body>
 </html>
